@@ -1,19 +1,46 @@
 import React, { useState } from "react";
+import { loginUser } from "../services/login";
 
-const Login = (props) => {
-  const [name, setName] = useState(" ");
-  const [email, setEmail] = useState(" ");
+const Login = ({ setToken }) => {
+  const [status, setStatus] = useState("idle");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleNameChange = (event) => setName(event.target.value);
+  const handleEmailChange = (event) => setEmail(event.target.value);
+
+  const handleSubmit = async (e) => {
+    setStatus("pending");
+    e.preventDefault();
+    try {
+      const response = await loginUser(email, name);
+      const json = await response.json();
+      //console.log(json);
+      const slToken = json.data.sl_token;
+      setToken(slToken);
+    } catch (error) {
+      setStatus("rejected");
+    }
+  };
+
+  if (status === "pending") {
+    return "Logging in . . .";
+  }
+
+  if (status === "rejected") {
+    return "Something went wrong";
+  }
 
   return (
     <div className="login">
-      <form className="login_form">
+      <form onSubmit={handleSubmit} className="login_form">
         <h1>Login</h1>
         <div className="login_field">
           <label htmlFor="name">Name</label>
           <input
             type="text"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={handleNameChange}
             required
           />
         </div>
@@ -22,7 +49,7 @@ const Login = (props) => {
           <input
             type="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleEmailChange}
             required
           />
         </div>
