@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import PostsLists from "../pages/PostsLists";
 import UsersList from "../pages/UsersList";
 import { getPosts } from "../services/posts";
-/* import { Router, Route } from "react-router-dom"; */
 
 const Posts = ({ token }) => {
   const [status, setStatus] = useState("idle");
