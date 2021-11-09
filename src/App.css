@@ -103,7 +103,12 @@ body {
 
 .container .left_box li span {
   float: right;
-  padding-right: 0.5rem;
+  background-color: #777;
+  color: white;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
 }
 .container .left_box button {
   width: 100%;
