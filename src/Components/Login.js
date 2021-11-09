@@ -9,9 +9,9 @@ const Login = ({ setToken }) => {
   const handleNameChange = (event) => setName(event.target.value);
   const handleEmailChange = (event) => setEmail(event.target.value);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (event) => {
     setStatus("pending");
-    e.preventDefault();
+    event.preventDefault();
     try {
       const response = await loginUser(email, name);
       const json = await response.json();

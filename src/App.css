@@ -18,8 +18,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   max-width: 30rem;
+  height: 100vh;
   margin: auto;
 }
 
@@ -70,4 +70,52 @@ body {
 .login_button:hover {
   transform: scale(1.1);
   opacity: 0.8;
+}
+
+.container {
+  display: flex;
+  overflow: auto;
+}
+
+.container .left_box {
+  width: 10rem;
+  height: 90vh;
+  margin: 1rem;
+  border: 0.2rem solid cornflowerblue;
+  position: fixed;
+  z-index: 1;
+  overflow: scroll;
+}
+.container .left_box li {
+  list-style: none;
+  padding: 0.1rem;
+}
+.container .left_box li span {
+  float: right;
+  padding-right: 0.5rem;
+}
+.container .left_box button {
+  width: 100%;
+  padding: 0.3rem 0;
+}
+.active {
+  background-color: rgb(100, 237, 162);
+}
+
+.container .right_box {
+  width: 100%;
+  height: 90vh;
+  margin: 1rem;
+  border: 0.2rem solid cornflowerblue;
+  margin-left: 12rem;
+  overflow: scroll;
+}
+
+.container .right_box ul {
+  padding: 1rem;
+  border-bottom: 1px solid silver;
+}
+
+.container .right_box li {
+  list-style: none;
 }
