@@ -1,6 +1,6 @@
 ### Description
 
-The purpose of this project is to evaluate my React and front-end development skills.This application is implemented using React and CSS3.Though, there are quite many NPM modules to make application better and more functional, the project was done with the minimal use of npm modules.
+The purpose of this project is to evaluate my React and front-end development skills. This application is implemented using React and CSS3. Though, there are quite many NPM modules to make application better and more functional, the project was done with the minimal use of NPM modules.
 
 ### Learning outcomes
 
