@@ -19,15 +19,35 @@ const PostsLists = ({ userPosts, currentUserId }) => {
     );
   }, [searchPosts, currentUserId, userPosts]);
 
+  const sortAsc = () => {
+    const sortedAsc = userPosts[currentUserId].posts.sort((post1, post2) => {
+      const post1Time = new Date(post1.created_time).valueOf();
+      const post2Time = new Date(post2.created_time).valueOf();
+      return post1Time < post2Time ? 1 : -1;
+    });
+
+    setOutputPosts(sortedAsc);
+  };
+
+  const sortDesc = () => {
+    const sortedDesc = userPosts[currentUserId].posts.sort((post1, post2) => {
+      const post1Time = new Date(post1.created_time).valueOf();
+      const post2Time = new Date(post2.created_time).valueOf();
+      return post1Time > post2Time ? 1 : -1;
+    });
+
+    setOutputPosts(sortedDesc);
+  };
+
   return (
     <div className="container">
       <div className="right_box">
         <div className="top_bar">
           <div>
-            <button>
+            <button onClick={sortAsc}>
               <i className="fa fa-toggle-up"></i>
             </button>
-            <button>
+            <button onClick={sortDesc}>
               <i className="fa fa-toggle-down"></i>
             </button>
           </div>

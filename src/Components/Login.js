@@ -53,7 +53,6 @@ const Login = ({ setToken }) => {
             required
           />
         </div>
-
         <button type="submit" className="login_button">
           Go
         </button>
