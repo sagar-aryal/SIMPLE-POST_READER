@@ -9,4 +9,4 @@ API Post and Get methods using endpoint url where a user need to get registered 
 ### Live Deployment
 
 View the app in the Live mode.\
-Open [http://localhost:3000](Live) to view it in the browser.
+Open [live](https://sagar-aryal.github.io/SIMPLE-POST_READER/) to view it in the browser.
