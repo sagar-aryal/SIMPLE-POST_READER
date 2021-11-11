@@ -26,7 +26,7 @@ const PostsLists = ({ userPosts, currentUserId }) => {
       return post1Time < post2Time ? 1 : -1;
     });
 
-    setOutputPosts(sortedAsc);
+    setOutputPosts([...sortedAsc]);
   };
 
   const sortDesc = () => {
@@ -36,7 +36,7 @@ const PostsLists = ({ userPosts, currentUserId }) => {
       return post1Time > post2Time ? 1 : -1;
     });
 
-    setOutputPosts(sortedDesc);
+    setOutputPosts([...sortedDesc]);
   };
 
   return (
