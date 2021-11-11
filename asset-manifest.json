@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/SIMPLE-POST_READER/static/css/main.26c49bb4.chunk.css",
-    "main.js": "/SIMPLE-POST_READER/static/js/main.76e2ffed.chunk.js",
-    "main.js.map": "/SIMPLE-POST_READER/static/js/main.76e2ffed.chunk.js.map",
+    "main.js": "/SIMPLE-POST_READER/static/js/main.04a4c173.chunk.js",
+    "main.js.map": "/SIMPLE-POST_READER/static/js/main.04a4c173.chunk.js.map",
     "runtime-main.js": "/SIMPLE-POST_READER/static/js/runtime-main.be5df20f.js",
     "runtime-main.js.map": "/SIMPLE-POST_READER/static/js/runtime-main.be5df20f.js.map",
-    "static/js/2.425e3025.chunk.js": "/SIMPLE-POST_READER/static/js/2.425e3025.chunk.js",
-    "static/js/2.425e3025.chunk.js.map": "/SIMPLE-POST_READER/static/js/2.425e3025.chunk.js.map",
+    "static/js/2.e3ec9ede.chunk.js": "/SIMPLE-POST_READER/static/js/2.e3ec9ede.chunk.js",
+    "static/js/2.e3ec9ede.chunk.js.map": "/SIMPLE-POST_READER/static/js/2.e3ec9ede.chunk.js.map",
     "index.html": "/SIMPLE-POST_READER/index.html",
     "static/css/main.26c49bb4.chunk.css.map": "/SIMPLE-POST_READER/static/css/main.26c49bb4.chunk.css.map",
-    "static/js/2.425e3025.chunk.js.LICENSE.txt": "/SIMPLE-POST_READER/static/js/2.425e3025.chunk.js.LICENSE.txt"
+    "static/js/2.e3ec9ede.chunk.js.LICENSE.txt": "/SIMPLE-POST_READER/static/js/2.e3ec9ede.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.be5df20f.js",
-    "static/js/2.425e3025.chunk.js",
+    "static/js/2.e3ec9ede.chunk.js",
     "static/css/main.26c49bb4.chunk.css",
-    "static/js/main.76e2ffed.chunk.js"
+    "static/js/main.04a4c173.chunk.js"
   ]
 }
